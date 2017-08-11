@@ -29,9 +29,9 @@ This could definitely use some work (combine with dock.sh)
     sh syst_prefs.sh
 
 ## TODO:
- - System preferences
-  - Dark mode
-  - Wallpaper
- - Dotfiles
- - Python modules
- - Zsh
+ * System preferences
+  * Dark mode
+  * Wallpaper
+ * Dotfiles
+ * Python modules
+ * Zsh
