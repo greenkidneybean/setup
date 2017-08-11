@@ -19,7 +19,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo scutil --set ComputerName $name && \
 sudo scutil --set HostName $name && \
 sudo scutil --set LocalHostName $name && \
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Fenrir"
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.appwaple.smb.server NetBIOSName -string "Fenrir"
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
@@ -115,7 +115,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # trackpad cursor speed
-defaults write NSGlobalDomain com.apple.trackpad.scaling -int 4
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 3
 
 # stop all those damn noises
 #defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
@@ -162,6 +162,12 @@ sudo pmset -c sleep 0 disksleep 15 displaysleep 15 halfdim 5
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
+
+# Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Snap icons to grid, may not be the correct command
+defaults write com.apple.Finder AnimateSnapToGrid -bool true
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 #defaults write com.apple.finder QuitMenuItem -bool true
@@ -300,12 +306,14 @@ defaults write com.apple.dock showhidden -bool true
 # 11: Launchpad
 # 12: Notification Center
 
+# Top right and left corners aren't working
 # Top right screen corner → Desktop
-defaults write com.apple.dock wvous-br-corner -int 4
-defaults write com.apple.dock wvous-br-modifier -int 0
+defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-modifier -int 0
 # Top left screen corner → Desktop
-defaults write com.apple.dock wvous-bl-corner -int 4
-defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-tl-corner -int 4
+defaults write com.apple.dock wvous-tl-modifier -int 0
+
 # Bottom right screen corner → Mission Control
 defaults write com.apple.dock wvous-br-corner -int 2
 defaults write com.apple.dock wvous-br-modifier -int 0
