@@ -6,3 +6,9 @@ brew update
 brew tap Homebrew/bundle
 brew bundle
 brew cask cleanup
+
+echo "Setup Python2 environment"
+28	pip install --egg -r pythonModules.txt
+
+echo "Setup Python3 environment"
+28	pip3 install --egg -r pythonModules.txt
