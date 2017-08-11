@@ -28,6 +28,12 @@ This could definitely use some work (combine with dock.sh)
 
     sh syst_prefs.sh
 
+## [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+
+   * make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
+   * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
+   * test via `ssh -vT git@github.com`
+
 ## TODO:
  * System preferences
   * Dark mode
