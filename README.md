@@ -29,7 +29,7 @@ This could definitely use some work (combine with dock.sh)
     sh syst_prefs.sh
 
 ## [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-
+   * setup guide for [Mac](http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/)
    * make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
    * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
    * test via `ssh -vT git@github.com`
