@@ -19,7 +19,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo scutil --set ComputerName $name && \
 sudo scutil --set HostName $name && \
 sudo scutil --set LocalHostName $name && \
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.appwaple.smb.server NetBIOSName -string "Fenrir"
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Otto-Astro"
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
