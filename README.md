@@ -8,6 +8,8 @@ Install X-code:
 
 ## Link dotfiles
 
+Gotta start looking into symlink with the dotfiles, start [here](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789)
+
 ## Homebrew
 
 Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
