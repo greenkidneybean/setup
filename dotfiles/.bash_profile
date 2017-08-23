@@ -1,3 +1,5 @@
+# Guide: https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
+
 #   ----  Paths  ----
 
 # Homebrew path takes precedence
@@ -40,8 +42,8 @@ extract() {
       *.tar)      tar -xvf "$1"                         ;;
       *.tbz2)     tar -jxvf "$1"                        ;;
       *.tgz)      tar -zxvf "$1"                        ;;
-      *.zip)      unzip "$1"                            ;;
-      *.ZIP)      unzip "$1"                            ;;
+      *.zip)      (zipfolder=$(echo "$1" | sed 's/.zip//');unzip "$1" -d "$zipfolder")    ;;
+      *.ZIP)      (zipfolder=$(echo "$1" | sed 's/.ZIP//');unzip "$1" -d "$zipfolder")    ;;
       *.pax)      cat "$1" | pax -r                     ;;
       *.pax.Z)    uncompress "$1" --stdout | pax -r     ;;
       *.Z)        uncompress "$1"                       ;;
@@ -51,8 +53,6 @@ extract() {
      echo "'$1' is not a valid file to extract"
   fi
 }
-
-
 
 #   ----  LS Directory Colors  ----
 alias ls='ls -G'
