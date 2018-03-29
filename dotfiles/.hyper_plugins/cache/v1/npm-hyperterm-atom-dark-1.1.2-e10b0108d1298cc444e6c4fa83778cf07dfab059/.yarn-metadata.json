@@ -1,0 +1,12 @@
+{
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyperterm-atom-dark/-/hyperterm-atom-dark-1.1.2.tgz#e10b0108d1298cc444e6c4fa83778cf07dfab059",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyperterm-atom-dark/-/hyperterm-atom-dark-1.1.2.tgz",
+    "hash": "e10b0108d1298cc444e6c4fa83778cf07dfab059",
+    "registry": "npm"
+  },
+  "registry": "npm",
+  "hash": "e10b0108d1298cc444e6c4fa83778cf07dfab059"
+}
