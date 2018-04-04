@@ -1,5 +1,20 @@
 # Reproducible Mac OS X Environment
 
+## TODO:
+* Simplify where possible (vanilla)
+* System preferences
+    * Dark mode
+    * Wallpaper
+* Dotfiles
+    * vim, zshrc, hyper
+    * pump python out to console
+    * rmarkdown
+* Python modules
+    * python in terminal, autocomplete
+* Zsh
+    * powerlevel9k? airbar?
+    * plugins?
+
 ## Install command line tools
 
 Install X-code:
@@ -35,11 +50,3 @@ This could definitely use some work (combine with dock.sh)
    * make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
    * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
    * test via `ssh -vT git@github.com`
-
-## TODO:
- * System preferences
-  * Dark mode
-  * Wallpaper
- * Dotfiles
- * Python modules
- * Zsh
