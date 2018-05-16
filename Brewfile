@@ -3,6 +3,8 @@ brew "python"
 brew "python3"
 brew "tree"
 brew "rbenv"
+brew "htop"
+brew "wget"
 
 # Tap useful formulae (what are these?)
 
@@ -20,6 +22,7 @@ cask "skype"
 cask "slack"
 cask "vlc"
 cask "iterm2"
+cask "hyper"
 cask "the-unarchiver"
 cask "shiftit"
 cask "transmission"
