@@ -16,9 +16,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-sudo scutil --set ComputerName $name && \
-sudo scutil --set HostName $name && \
-sudo scutil --set LocalHostName $name && \
+#sudo scutil --set ComputerName $name && \
+#sudo scutil --set HostName $name && \
+#sudo scutil --set LocalHostName $name && \
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Otto-Astro"
 
 # Set standby delay to 24 hours (default is 1 hour)
@@ -118,7 +118,7 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 defaults write NSGlobalDomain com.apple.trackpad.scaling -int 3
 
 # stop all those damn noises
-#defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -138,6 +138,9 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
+
+# make menu and dock dark
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -342,7 +345,8 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Finder" "Mail" "SystemUIServer"; do
+for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Finder" "Mail" "SystemUIServer" "Dock"; do
 	killall "$app" > /dev/null 2>&1
 done
+echo ""
 echo "Done. Note that some of these changes require a logout/restart to take effect."

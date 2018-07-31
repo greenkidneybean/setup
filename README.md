@@ -29,9 +29,17 @@ Gotta start looking into symlink with the dotfiles, start [here](https://medium.
 
 Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-    sh brew.sh
+## Run Setup
+
+`sh setup.sh`
+
+A restart is necessary to update all preferences.
+
+## Follow-up ToDo:
+- Check Anaconda installation and path
+- [Add GitHub SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
 ## Ruby
 
