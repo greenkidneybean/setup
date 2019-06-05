@@ -6,50 +6,30 @@ _"Keep it vanilla"_ ~Antej
     * Dark mode: 
          * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
          * Logout, login, set appearance to "Dark"
-* Dotfiles
-    * vim, zshrc, hyper
-    * pump python out to console
-    * rmarkdown
-* Python modules
-    * python in terminal, autocomplete
-* Zsh
-    * powerlevel9k? airbar?
-    * plugins?
+* Setup guide for zsh
+* Dig-up old .bashrc
+* Specifics/config for Atom?
 
-## Install command line tools
-
-Install X-code:
-
-    xcode-select --install
-
-## Link dotfiles
+## 1. Install X-Code
 
 ```
-cd ~
-git clone https://github.com/greenkidneybean/.dotfiles.git
-cd .dotfiles
-sh dotfiles.sh
+xcode-select --install
 ```
 
-Setup iTerm2 profile: iTerm ▶ General ▶ Preferences ▶ Save Settings To Folder ▶ ~/.iterm2
-
-## Homebrew
+## 2. Install Homebrew
 
 Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## Run Setup
+## 3. Run Setup Script
 
 `sh setup.sh`
 
 A restart is necessary to update all preferences.
 
-## Follow-up ToDo:
-- Check Anaconda installation and path
-- [Add GitHub SSH Key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
-## Ruby
+## 4. Setup Ruby Environment (is this still necessary)
 
 Set [Ruby](https://www.ruby-lang.org/en/downloads/) environment to current stable version
 
