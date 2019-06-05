@@ -23,7 +23,14 @@ Install X-code:
 
 ## Link dotfiles
 
-Gotta start looking into symlink with the dotfiles, start [here](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789)
+```
+cd ~
+git clone https://github.com/greenkidneybean/.dotfiles.git
+cd .dotfiles
+sh dotfiles.sh
+```
+
+Setup iTerm2 profile: iTerm ▶ General ▶ Preferences ▶ Save Settings To Folder ▶ ~/.iterm2
 
 ## Homebrew
 
