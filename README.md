@@ -3,7 +3,9 @@ _"Keep it vanilla"_ ~Antej
 
 ## TODO:
 * System preferences
-    * Dark mode: defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+    * Dark mode: 
+         * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
+         * Logout, login, set appearance to "Dark"
 * Dotfiles
     * vim, zshrc, hyper
     * pump python out to console
