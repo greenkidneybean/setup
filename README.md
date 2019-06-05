@@ -36,9 +36,19 @@ Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## 3. Run Setup Script
+## 3. Run Setup Script. 
 
 `sh setup.sh`
+
+Works through setting up:
+1. System preferences
+2. Homebrew applications
+3. Dock preferences
+4. Linking dotfiles
+
+Note: each of these scripts can be run individually: `scripts/dotfiles.sh'
+
+
 
 A restart is necessary to update all preferences.
 
