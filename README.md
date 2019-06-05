@@ -10,6 +10,20 @@ _"Keep it vanilla"_ ~Antej
 * Dig-up old .bashrc
 * Specifics/config for Atom?
 
+## Quick Start
+
+```
+xcode-select --install
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+cd ~
+git clone https://github.com/greenkidneybean/setup.git
+cd setup
+sh setup.sh
+```
+
+
 ## 1. Install X-Code
 
 ```
@@ -37,6 +51,7 @@ Set [Ruby](https://www.ruby-lang.org/en/downloads/) environment to current stabl
 
 ## OS X defaults
 
+This is not friendly if there are no sudo privledges.
 This could definitely use some work (combine with dock.sh)
 
     sh syst_prefs.sh
