@@ -1,15 +1,6 @@
 # Reproducible Mac OS X Environment
 _"Keep it vanilla"_ ~Antej
 
-## TODO:
-* System preferences
-    * Dark mode: 
-         * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
-         * Logout, login, set appearance to "Dark"
-* Setup guide for zsh
-* Dig-up old .bashrc
-* Specifics/config for Atom?
-
 ## Quick Start
 
 ```
@@ -22,7 +13,6 @@ git clone https://github.com/greenkidneybean/setup.git
 cd setup
 sh setup.sh
 ```
-
 
 ## 1. Install X-Code
 
@@ -62,10 +52,19 @@ Set [Ruby](https://www.ruby-lang.org/en/downloads/) environment to current stabl
 rbenv install 2.4.1
 ```
 
-## Final Touches
+## 5. Final Touches
 
 [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 * setup guide for [Mac](http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/)
 * make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
 * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
 * test via `ssh -vT git@github.com`
+
+## TODO:
+* System preferences
+    * Dark mode: 
+         * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
+         * Logout, login, set appearance to "Dark"
+* Setup guide for zsh
+* Dig-up old .bashrc
+* Specifics/config for Atom?
