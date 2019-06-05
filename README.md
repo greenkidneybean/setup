@@ -34,40 +34,38 @@ xcode-select --install
 
 Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 ## 3. Run Setup Script. 
 
-`sh setup.sh`
+```
+sh setup.sh
+```
 
 Works through setting up:
-1. System preferences
-2. Homebrew applications
-3. Dock preferences
-4. Linking dotfiles
+1. System preferences: `sh scripts/syst_prefs.sh`
+2. Homebrew applications: `sh scripts/homebrew.sh`
+3. Dock preferences: `sh scripts/dock.sh`
+4. Linking dotfiles: `sh scripts/dotfiles.sh`
 
-Note: each of these scripts can be run individually: `scripts/dotfiles.sh'
-
-
-
-A restart is necessary to update all preferences.
-
+Note: 
+* Each of these scripts can be run individually: `scripts/dotfiles.sh`
+* **A restart is necessary to update all preferences**
 
 ## 4. Setup Ruby Environment (is this still necessary)
 
 Set [Ruby](https://www.ruby-lang.org/en/downloads/) environment to current stable version
 
-    rbenv install 2.4.1
+```
+rbenv install 2.4.1
+```
 
-## OS X defaults
+## Final Touches
 
-This is not friendly if there are no sudo privledges.
-This could definitely use some work (combine with dock.sh)
-
-    sh syst_prefs.sh
-
-## [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-   * setup guide for [Mac](http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/)
-   * make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
-   * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
-   * test via `ssh -vT git@github.com`
+[Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+* setup guide for [Mac](http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/)
+* make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
+* add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
+* test via `ssh -vT git@github.com`
