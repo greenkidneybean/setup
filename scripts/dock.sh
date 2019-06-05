@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-echo "Setting dock apps"
+echo "Setting dock preferences"
 
 # clears the dock of all apps, then adds your individual dock config
 # config file:
