@@ -1,10 +1,9 @@
 # Reproducible Mac OS X Environment
+_"Keep it vanilla"_ ~Antej
 
 ## TODO:
-* Simplify where possible (vanilla)
 * System preferences
-    * Dark mode
-    * Wallpaper
+    * Dark mode: defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 * Dotfiles
     * vim, zshrc, hyper
     * pump python out to console
