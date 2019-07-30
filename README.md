@@ -61,10 +61,16 @@ rbenv install 2.4.1
 * test via `ssh -vT git@github.com`
 
 ## TODO:
+* Dotfiles is broken, cd into github and sh setup_dotfiles.sh
+  * dotfile for ShiftIt?
+* Homebrew broken (and takes a while)
+  * run last
 * System preferences
-    * Dark mode: 
-         * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
-         * Logout, login, set appearance to "Dark"
+  * Dark mode:
+    * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
+    * Logout, login, set appearance to "Dark"
+    * Finder sidebar and grid lock
+    * Wallpaper
 * Setup guide for zsh
 * Dig-up old .bashrc
 * Specifics/config for Atom?
