@@ -65,6 +65,7 @@ rbenv install 2.4.1
   * dotfile for ShiftIt?
 * Homebrew broken (and takes a while)
   * run last
+  * specify location of brewfile or cd into scripts and run homebrew script from there
 * System preferences
   * Dark mode:
     * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
