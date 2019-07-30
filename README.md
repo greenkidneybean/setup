@@ -71,8 +71,9 @@ rbenv install 2.4.1
   * Dark mode:
     * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
     * Logout, login, set appearance to "Dark"
-    * Finder sidebar and grid lock
-    * Wallpaper
+  * Finder sidebar and grid lock
+  * Wallpaper
+  * **Touch to click on trackpad**
 * Setup guide for zsh
 * Dig-up old .bashrc
 * Specifics/config for Atom?
