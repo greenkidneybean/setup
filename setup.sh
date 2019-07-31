@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # run system preferences
-echo "Setting system preferences
+echo "Setting system preferences"
 sh scripts/syst_prefs.sh
 
 # install applications view homebrew
