@@ -49,8 +49,13 @@ Set [Ruby](https://www.ruby-lang.org/en/downloads/) environment to current stabl
 ```
 rbenv install 2.4.1
 ```
+## 5. zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
 
-## 5. Final Touches
+## 6. Final Touches
 * Mojave [dark menu bar](http://osxdaily.com/2018/10/15/dark-menu-dock-light-theme-macos/)
 [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
   * Set theme to "Light"

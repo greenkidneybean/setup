@@ -14,6 +14,7 @@ brew "sqlite"
 brew "tree"
 brew "wget"
 brew "xz"
+brew "zsh"
 
 # Tap useful formulae (what are these?)
 #tap "homebrew/science"
