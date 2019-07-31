@@ -82,3 +82,6 @@ rbenv install 2.4.1
   * Zotero
   * Steam
 * Specifics/config for Atom?
+* iTerm
+  * color theme for terminal (not OneDark)
+  * config file for iTerm?
