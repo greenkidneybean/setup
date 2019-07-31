@@ -28,7 +28,7 @@ Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## 3. Run Setup Script. 
+## 3. Run Setup Script.
 
 ```
 sh setup.sh
@@ -40,7 +40,7 @@ Works through setting up:
 3. Dock preferences: `sh scripts/dock.sh`
 4. Linking dotfiles: `sh scripts/dotfiles.sh`
 
-Note: 
+Note:
 * Each of these scripts can be run individually: `scripts/dotfiles.sh`
 * **A restart is necessary to update all preferences**
 
@@ -73,15 +73,19 @@ rbenv install 2.4.1
     * ```defaults write -g NSRequiresAquaSystemAppearance -bool Yes```
     * Logout, login, set appearance to "Dark"
   * add "volume" preferances to menu bar
+    * tried adding to step where things are removed
   * Finder sidebar and grid lock
   * Wallpaper
   * **Touch to click on trackpad**
 * Setup guide for zsh
 * Dig-up old .bashrc
-* New Casks
-  * Zotero
-  * Steam
+* customize notificaitons
 * Specifics/config for Atom?
 * iTerm
   * color theme for terminal (not OneDark)
   * config file for iTerm?
+* conda environments
+  * use miniconda?
+  * lean base
+  * r-essentials for r_env
+  * r-kernel

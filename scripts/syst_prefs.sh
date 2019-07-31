@@ -2,8 +2,6 @@
 
 # pulled from trevor bedford setup repository
 
-name="$1" #name of the computer
-
 echo "Setting system preferences"
 
 # Ask for the administrator password upfront
@@ -32,7 +30,7 @@ sudo pmset -a standbydelay 86400
 #defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
 # Menu bar: hide the useless Time Machine and Volume icons
-#defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/Volume.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Set highlight color to purple
 #defaults write NSGlobalDomain AppleHighlightColor -string '0.835 0.871 0.897'
