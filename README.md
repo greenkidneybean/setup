@@ -4,8 +4,6 @@ _"Keep it vanilla"_ ~Antej
 ## Quick Start
 
 ```
-xcode-select --install
-
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 cd ~
@@ -93,3 +91,4 @@ rbenv install 2.4.1
   * lean base
   * r-essentials for r_env
   * r-kernel
+* merge the dock.sh with the system_prefs.sh
