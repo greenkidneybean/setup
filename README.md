@@ -68,6 +68,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 * test via `ssh -vT git@github.com`
 
 ## TODO:
+* setup vim plugins
+* embed the dotfile repo in this repo
 * Dotfiles is broken, cd into github and sh setup_dotfiles.sh
   * dotfile for ShiftIt?
   * remove dotfiles folder from "setup" repo
