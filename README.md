@@ -57,11 +57,16 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 ## 6. Final Touches
 * Mojave [dark menu bar](http://osxdaily.com/2018/10/15/dark-menu-dock-light-theme-macos/)
-[Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+* [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
   * Set theme to "Light"
   * `defaults write -g NSRequiresAquaSystemAppearance -bool Yes`
   * Log out, then back in
   * Set theme to "Dark"
+* Sudo setup:
+    * add user to the admin group:
+    * `sudo dscl . -append /Groups/admin GroupMembership <username>`
+    * use `sudo visudo` to add username to sudoers file in /etc/sudoers
+        * may need to boot into safe mode, mount encrypted drive, then use vi to add sudo user
 * setup guide for [Mac](http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/)
 * make ssh key (add email): `ssh-keygen -t rsa -b 4096 -C "[EMAIL]"`
 * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
