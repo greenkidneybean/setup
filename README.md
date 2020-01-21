@@ -34,6 +34,8 @@ sh setup.sh
 
 Works through setting up:
 1. System preferences: `sh scripts/syst_prefs.sh`
+# should setup zsh within system preferences
+# would also be nice to setup preferences for finder (sidebar and column view)
 2. Homebrew applications: `sh scripts/homebrew.sh`
 3. Dock preferences: `sh scripts/dock.sh`
 4. Linking dotfiles: `sh scripts/dotfiles.sh`
@@ -42,20 +44,25 @@ Note:
 * Each of these scripts can be run individually: `scripts/dotfiles.sh`
 * **A restart is necessary to update all preferences**
 
-## 4. Setup Ruby Environment (is this still necessary?)
+## 4. iTerm2
+Preferences -> General -> Preferences -> "Load preferences from a custom folder"
+`~/.iterm2`
 
-Set [Ruby](https://www.ruby-lang.org/en/downloads/) environment to current stable version
-
-```
-rbenv install 2.4.1
-```
 ## 5. zsh
+For some reason the prompt takes a bit to load, not quick (plugins?)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 ## 6. Final Touches
+* zsh setup is currently a shitshow
+ * [Simple guide](https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/)
+ * need to separate .bashrc with some basics and keep a simple .zshrc
+ * must setup the following:
+   * switch shell to zsh
+   * install oh-my-zsh
+   * install autocomplete (and add to zshrc plugins)
 * Mojave [dark menu bar](http://osxdaily.com/2018/10/15/dark-menu-dock-light-theme-macos/)
 * [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
   * Set theme to "Light"
