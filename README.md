@@ -64,11 +64,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
    * install oh-my-zsh
    * install autocomplete (and add to zshrc plugins)
 * Mojave [dark menu bar](http://osxdaily.com/2018/10/15/dark-menu-dock-light-theme-macos/)
-* [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
   * Set theme to "Light"
   * `defaults write -g NSRequiresAquaSystemAppearance -bool Yes`
   * Log out, then back in
   * Set theme to "Dark"
+* [Github config](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 * Sudo setup:
     * add user to the admin group:
     * `sudo dscl . -append /Groups/admin GroupMembership <username>`
@@ -79,7 +79,18 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 * add to ssh-agent + keychain via `ssh-add -K ~/.ssh/github`
 * test via `ssh -vT git@github.com`
 
+## Migration
+* conda environments
+* Zotero setup:
+  * Preferences -> Sync
+    * login to sync data
+    * check "Sync attachment files in My Library using Zotero"
+  
+  * zotero papers synced to Dropbox ~/Dropbox/zotero
+  
+
 ## TODO:
+* wrangle conda environments
 * setup vim plugins
 * embed the dotfile repo in this repo
 * Dotfiles is broken, cd into github and sh setup_dotfiles.sh
@@ -102,12 +113,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 * Dig-up old .bashrc
 * customize notificaitons
 * Specifics/config for Atom?
-* iTerm
-  * color theme for terminal (not OneDark)
-  * config file for iTerm?
 * conda environments
   * use miniconda?
   * lean base
   * r-essentials for r_env
   * r-kernel
-* merge the dock.sh with the system_prefs.sh
+  * use mamba?
