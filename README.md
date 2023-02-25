@@ -84,9 +84,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 * Zotero setup:
   * Preferences -> Sync
     * login to sync data
-    * check "Sync attachment files in My Library using Zotero"
-  
-  * zotero papers synced to Dropbox ~/Dropbox/zotero
+    * uncheck "Sync full-text content"
+    * uncheck "Sync attachment files in group libraries using Zotero storage"
+  * Preferences -> Advanced
+    * zotero papers synced to Dropbox ~/Dropbox/zotero
   
 
 ## TODO:
