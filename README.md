@@ -12,21 +12,15 @@ cd setup
 sh setup.sh
 ```
 
-## 1. Install X-Code
+## 1. Install Homebrew
+
+Install [Homebrew](https://brew.sh/) and packages listed in Brewfile, should also install Xcode (if not: `xcode-select --install`)
 
 ```
-xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)""
 ```
 
-## 2. Install Homebrew
-
-Install [Homebrew](https://brew.sh/) and packages listed in Brewfile
-
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-## 3. Run Setup Script.
+## 2. Run Setup Script.
 
 ```
 sh setup.sh
@@ -44,18 +38,18 @@ Note:
 * Each of these scripts can be run individually: `scripts/dotfiles.sh`
 * **A restart is necessary to update all preferences**
 
-## 4. iTerm2
+## 3. iTerm2
 Preferences -> General -> Preferences -> "Load preferences from a custom folder"
 `~/.iterm2`
 
-## 5. zsh
+## 4. zsh
 For some reason the prompt takes a bit to load, not quick (plugins?)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
-## 6. Final Touches
+## 5. Final Touches
 * zsh setup is currently a shitshow
  * [Simple guide](https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/)
  * need to separate .bashrc with some basics and keep a simple .zshrc
