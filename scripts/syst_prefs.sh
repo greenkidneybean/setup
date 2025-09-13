@@ -138,7 +138,7 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ###############################################################################
 
 # make menu and dock dark
-osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
+#osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
